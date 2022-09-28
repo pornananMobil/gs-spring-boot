@@ -21,9 +21,3 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build'
-- task: KubernetesManifest@0
-  inputs:
-    action: 'deploy'
-    kubernetesServiceConnection: 'pwr-openshift-sandbox-pworras-dev-1663728490823'
-    namespace: 'pworras-dev'
-    manifests: '1234'
